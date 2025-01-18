@@ -1,0 +1,3375 @@
+/* RESET */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup,       
+menu, nav, output, section, summary, 
+time, mark, audio, video {    
+    margin: 0;  
+    padding: 0; 
+    border: 0;  
+    font: inherit;
+    vertical-align: baseline;   
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button, input, textarea, select, a {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+img, embed, object, video {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+} 
+
+video,
+.slick-slide {
+    outline: none !important;
+}
+
+.slick-next, 
+.slick-arrow {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+/* END RESET */
+
+
+/* FONTS */
+@font-face {
+    font-family: 'lato-light';
+    src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: 'lato-regular';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'lato-bold';
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'lato-black';
+    src: url('../fonts/Lato-Black.ttf');
+}
+/* END FONTS */
+
+
+/* CONTENT */
+body {
+    font-family: 'lato-regular';
+    line-height: 1.4;
+    overflow-x: hidden;
+    color: #1d1d1b;
+    letter-spacing: 0.1rem;
+}
+
+html {
+    font-size: 15px;
+} 
+
+::-moz-selection {
+    background-color: #d1b05f;
+    color: #ffffff;
+} 
+
+::selection {
+    background-color: #d1b05f;
+    color: #ffffff;
+}
+
+.container {
+    padding-left: 11rem;
+    padding-right: 11rem;
+}
+
+.container-extra {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.container-left {
+    padding-left: 11rem;
+}
+
+.container-right {
+    padding-right: 11rem;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.flex2 {
+    display: flex !important;
+    flex-direction: row;
+    display: -webkit-box;
+
+}
+
+.flex2 h2 {
+    margin-bottom: 10px;
+}
+
+.nowrap {    
+    -ms-flex-wrap: nowrap;    
+        flex-wrap: nowrap;
+}
+
+.center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.top {
+    padding-top: 10rem;
+}
+
+.top-extra {
+    padding-top: 20rem;
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}  
+
+.banner-main {
+    background-image: url(../images/cepac-centro-padre-alves-correia-banner.jpg);
+    height: 38rem !important;
+}
+
+.pellicle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: auto;
+}
+
+.main-title h1 {    
+    font-size: 5rem;
+    font-family: 'lato-black';
+    text-transform: uppercase;    
+    line-height: 1.3;
+    letter-spacing: 0.3rem;
+}
+
+.main-title h1,
+.main-title p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.paragraph p,
+.smalltitle h2,
+.smalltitle h3,
+.smalltitle h4 {
+    font-size: 1.5rem;
+}
+
+.minititle h3,
+.middleparagraph p {
+    font-size: 1.3rem;
+}
+
+.main-title p {
+    font-size: 2rem;
+}
+
+.title h2,
+.hipertitle h2 {
+    color: #d1b05f;
+} 
+
+.bigtitle h1,
+.bigtitle h2 {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+.bigtitle h1 {
+    color: #d1b05f;
+}
+
+.bigtitle h2 {
+    color: #0099d5;
+}
+
+.title h2 {    
+    font-size: 3.4rem;
+}
+
+.hipertitle h2 {
+    font-size: 2.8rem;
+}
+
+.supertitle h2 {
+    font-size: 2.6rem;
+}
+
+.mediumtitle h2,
+.mediumtitle h3 {
+    font-size: 2.2rem;
+}
+
+.minititle,
+.middleparagraph p {
+    font-size: 1.3rem;
+}
+
+.bigparagraph p,
+.greyparagraph p {
+    font-size: 1.8rem;       
+}
+
+.mediumparagraph p {
+    font-size: 1.6rem;
+}
+
+.middleparagraph p {
+    color: #606060; 
+}
+
+.smallparagraph p {
+    font-size: 1.1rem;
+}
+
+.greyparagraph p {
+    font-family: 'lato-bold';
+    font-size: 1.7rem;
+    color: #606060;
+}
+
+.begin-text {
+    padding-top: 6rem;
+    padding-bottom: 6rem;  
+    text-align: center;
+    text-transform: uppercase;  
+    width: 85%;
+    margin: auto;    
+}
+
+.begin-text .bigparagraph p {
+    line-height: 1.6;
+}
+
+.begin-text .paragraph p {
+    padding-top: 2rem;
+    font-style: italic;
+}
+
+.blue {
+    color: #0099d5;
+}
+
+.brown {
+    color: #d1b05f;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.bold {
+    font-family: 'lato-black';
+}
+
+.light {
+    font-family: 'lato-light'
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.background-blue {
+    background-color: #0099d5;
+    border: 0.1rem solid #0099d5;
+}
+
+.background-brown {
+    background-color: #d1b05f;
+    border: 0.1rem solid #d1b05f;
+}
+
+.background-grey {
+    background-color: #ebebeb;
+}
+
+.border-blue {
+    border: 0.1rem solid #0099d5;
+}
+
+.border-brown {
+    border: 0.1rem solid #d1b05f;
+} 
+
+.border-blue-left {
+    border-left: 0.5rem solid #0099d5; 
+}
+
+.border-brown-left {
+    border-left: 0.5rem solid #d1b05f; 
+}
+
+.slider-container-right {
+    padding: 10rem 0 4rem 13rem;
+}
+
+.slider-container h2 {
+    padding: 0 0 2rem 6rem;
+    width: 80%;
+    line-height: 1.2;
+}
+
+.slider-container img {
+    border-radius: 1.5rem;
+}
+
+.slider-container .prev img, 
+.slider-container .next img {
+    width: 1.6rem;
+}
+
+.slider-border-right {
+    right: -4rem;
+}
+
+.slider-border-right .prev, 
+.slider-border-right .next {
+    top: -3.5rem !important;
+}
+
+.slider-border-right .prev {
+    right: 18rem !important;
+}
+
+.slider-border-right .next {
+    right: 15rem !important;
+}
+
+.slider-border-left {
+    left: -15rem;
+    width: calc(100% + 15rem) !important;
+}
+
+.slider-border-left .prev, 
+.slider-border-left .next {
+    top: calc(100% + 4rem) !important;
+}
+
+.slider-border-left .prev {
+    right: 3rem !important;
+}
+
+.slider-border-left .next {
+    right: 0.5rem !important;
+}
+
+.prev, 
+.next {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.faqs {
+    padding: 0 8rem;
+}
+
+.faqs > div {
+    padding: 1rem 0;
+}
+
+.faqs .faq-question {      
+    cursor: pointer;
+    padding: 0.7rem 1.5rem 0.7rem 3rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
+}
+  
+.faqs .border-blue.active {
+    background-color: #0099d5;
+}
+  
+.faqs .border-brown.active {
+    background-color: #d1b05f;
+}
+
+.faqs .faq-answer {
+    display: none;    
+}
+
+.faqs h2 {
+    font-family: 'lato-black';
+    color: #0099d5 !important;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.faqs h2.active {
+    color: #ffffff !important;
+}
+
+.faqs p {    
+    padding: 2rem 0 1rem 3.5rem;  
+}
+
+.faqs .faq-open img {
+    width: 1rem;
+}
+
+.faqs .faq-closed {
+    display: none;
+}
+
+.faqs .faq-closed img {
+    width: 1.5rem;
+} 
+
+.faq-name {
+    margin-right: auto;
+    padding-right: 4rem;
+}
+
+.faqs a {
+    color: #0099d5;
+}
+
+.btns a > div {    
+    padding: 1rem 1rem 1rem 2rem;
+    font-family: 'lato-black';
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.btns a .background-blue:hover {
+	background-color: transparent;
+	color: #0099d5;
+} 
+
+.bigger-btns a > div {
+    width: 35rem;
+}
+
+.medium-btns a > div {
+    width: 30rem;
+}
+
+.small-btns a > div {
+    width: 20rem;
+}
+
+.smaller-btns a > div {
+    width: 16rem;
+}
+
+.btns .name-icon {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.btns .name {
+    margin-right: auto;
+    padding-right: 1rem;
+}
+
+.btns .icon img {
+    width: 1.5rem;
+}
+
+.icon-animation {
+    -webkit-transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+    -o-transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1); 
+}
+
+.icon-animation:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+#soon .banner-main {
+    background-image: url(../images/cepac-centro-padre-alves-correia-desenvolvimento-banner.jpg);
+}
+
+.bullet-list {
+    margin-left: 20px; 
+    color: #606060; 
+    font-size: 1.3rem;
+}
+/* END CONTENT */
+
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    background-color: #ffffff;
+}   
+
+#grey header {
+    background-color: #e3e3e3;
+}
+
+header .navbar {  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}    
+
+header .logo {
+    margin-right: auto;
+    padding: 1rem 0 1rem 9rem;
+}
+
+header .logo img {
+    width: 12rem;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    -webkit-transition: -webkit-transform 0.7s ease-in-out;
+    transition: -webkit-transform 0.7s ease-in-out;
+    -o-transition: transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+header ul li {    
+    font-size: 1.3rem;
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;    
+    width: 22rem; 
+}    
+
+header .navbar ul.scroll {    
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999999;
+}
+
+header ul li a,
+header ul .drop .link {
+    font-family: 'lato-bold';
+    color: #0099d5;
+    border-left: 0.4rem solid #0099d5;
+    margin-bottom: 0.5rem;   
+}
+
+header ul li a,
+header ul .drop .link,
+header nav .dropdown a {
+    padding: 0.8rem 1rem 0.8rem 1.5rem;
+}
+
+/*header ul li a:hover {
+    background-color: #0099d5;
+    color: #ffffff;
+}*/
+
+header ul li #flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+header nav .color.blue {
+    background-color: #0099d5; 
+}
+
+header ul .drop .link.white {
+    color: #ffffff;   
+}
+
+header nav .dropdown {
+    display: none;
+}
+
+header nav .dropdown a {
+    display: block;
+    color: #1d1d1b !important;
+    background-color: #ffffff !important;
+    font-family: 'lato-regular';
+    border-left: 0.4rem solid #d1b05f !important;
+}
+
+header nav .dropdown a:last-child {
+    border-bottom: none;
+}
+
+header nav .dropdown.show {
+    display: block;
+}
+
+header nav .icon-left img {
+    width: 1rem;
+}
+
+header nav .icon-down img {
+    width: 1.5rem;
+}
+
+header nav .icon-down {
+    margin-right: 0.8rem;
+}
+
+header nav .closed {
+    display: none;
+}
+
+header .animation {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    -webkit-transition: -webkit-transform 0.7s ease-in-out;
+    transition: -webkit-transform 0.7s ease-in-out;
+    -o-transition: transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+header .bar {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: #1d1d1b;
+    margin: 0.4rem 0.4rem 0.4rem 2rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header .toggle {
+    display: none;
+    padding-top: 1rem;    
+}
+
+header .toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+header .toggle.active .bar:nth-child(1) {
+    -webkit-transform: translateY(0.4rem) rotate(45deg);
+    -ms-transform: translateY(0.4rem) rotate(45deg);
+    transform: translateY(0.4rem) rotate(45deg);
+}
+
+header .toggle.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-0.8rem) rotate(-45deg);
+    -ms-transform: translateY(-0.8rem) rotate(-45deg);
+    transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+ header .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: fixed;
+    background-color: #ffffff;
+    width: 42rem;
+    height: 100vh;
+    -webkit-transform: translate(-101%);
+    -ms-transform: translate(-101%);
+    transform: translate(-101%);
+    padding: 6rem;
+}
+
+header nav .link {
+    margin-right: auto;
+}
+
+header .toggle, 
+header .bar {
+    display: block;
+    z-index: 200;
+}
+
+header .toggle.hide {
+    display: none;
+} 
+
+header nav .drop {
+    cursor: pointer;
+}
+
+header nav .dropdown a {
+    display: block;
+    padding-top: 1rem;
+}
+    
+header .mobile {
+    -webkit-transform: translate(0%)!important;
+        -ms-transform: translate(0%)!important;
+            transform: translate(0%)!important;
+}
+
+header .right {
+    padding: 1rem 2rem 0 1rem;
+}  
+
+header .search-bar {
+    padding-right: 3rem;
+}
+
+header .search-bar form input {
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.1rem solid #d7d7d7;
+    padding: 0.5rem 1rem;
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.1rem;
+    font-style: italic;
+    height: 2.5rem;
+}
+
+header .search-bar form input::-webkit-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+header .search-bar form input:-moz-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+header .search-bar form input::-moz-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+header .search-bar form input:-ms-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+header .search-bar form button {
+    background-color: #d7d7d7;
+    border: 0.1rem solid #d7d7d7;
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+header .search-bar form button:hover {
+	background-color: transparent;
+}
+
+header .btn a > div {
+    font-size: 1rem;
+    border-radius: 4rem;
+    padding: 0.3rem 1rem;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+}
+
+header .btn a .border-blue:hover,
+header .btn a .border-brown:hover {
+	color: #ffffff;
+}
+
+header .btn a .border-blue:hover {
+	background-color: #0099d5;
+}
+
+header .btn a .border-brown:hover {
+	background-color: #d1b05f;
+}
+
+header .social {
+    padding-top: 0.3rem;
+}
+
+header .social a {
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.1rem solid #1d1d1b;
+    color: #1d1d1b;
+    padding: 0.4rem 0;
+    font-size: 1.1rem;
+}
+
+header .fa-facebook-f {
+    padding-left: 0.7rem;
+    padding-right: 0.3rem;
+}
+
+header .fa-linkedin-in {
+    padding-left: 0.6rem;
+    padding-right: 0.2rem;
+}
+
+header .fa-instagram {
+    padding-left: 0.6rem;
+    padding-right: 0.3rem;
+}
+
+header .fa-youtube {
+    padding-left: 0.6rem;
+    padding-right: 0.5rem;
+}
+/* END HEADER */
+
+
+/* FOOTER */
+footer {
+    background-color: #004256;
+}
+
+footer .first {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem;
+}
+
+footer .first > div {
+    width: 33.333%;    
+}
+
+footer .logotipo {
+    text-align: right;
+    padding-right: 8rem;
+}
+
+footer .logotipo img {
+    width: 17rem;
+}
+
+footer .texts {
+    padding: 0 0 0 4rem;
+    border-left: 0.2rem solid #0099d5;
+}
+
+footer p, 
+footer a {
+    font-size: 1.2rem;
+    font-family: 'lato-light';
+    line-height: 1.3;
+}
+
+footer .first a {
+    color: #d1b05f;
+}
+
+footer .first p {
+    padding-bottom: 1rem;
+}
+
+footer .first .two {
+    padding-top: 6rem;
+}
+
+footer form {
+    padding-top: 0.5rem;
+}
+
+footer form input {
+    width: 15rem;
+    background-color: #ffffff;
+    border: 0.1rem solid #ffffff;
+    padding: 0.5rem;
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1rem;
+    font-style: italic;
+    height: 2.5rem;
+}
+
+footer form input::-webkit-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1rem;
+    font-style: italic;
+}
+
+footer form input:-moz-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1rem;
+    font-style: italic;
+}
+
+footer form input::-moz-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1rem;
+    font-style: italic;
+}
+
+footer form input:-ms-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1rem;
+    font-style: italic;
+}
+
+footer form button {
+    background-color: #d7d7d7;
+    border: 0.1rem solid #d7d7d7;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'lato-black';
+    padding: 0 1rem;
+    height: 2.5rem;
+}
+
+footer form button:hover {
+	background-color: transparent;
+}
+
+footer .second {
+    border-top: 0.2rem solid #0099d5;
+    margin: 0 3rem;
+    padding: 1rem 0;
+}
+
+footer .second > div {
+    width: 33.333%;
+    padding: 1rem 4rem;
+}
+
+footer .second a,
+footer .second p {
+    color: #ffffff;
+}
+
+footer .second a {    
+    text-decoration: underline;
+}
+
+footer .texts-media {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 4rem;
+}
+
+footer .texts-media .texts {
+    margin-right: auto;
+}
+
+footer .media > div {
+    padding-top: 1.5rem;
+}
+
+footer .media a {
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 0.1rem solid #ffffff;
+    color: #004256;
+    padding: 0.4rem 0;
+    font-size: 1.1rem;
+}
+
+footer .fa-facebook-f {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+footer .fa-linkedin-in {
+    padding-left: 0.6rem;
+    padding-right: 0.5rem;
+}
+
+footer .fa-instagram {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+footer .fa-youtube {
+    padding-left: 0.6rem;
+    padding-right: 0.5rem;
+}
+
+footer .one {
+    visibility: hidden;
+}
+
+.logos-footer {
+    border-top: 0.1rem solid #004256;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.logos-footer img {
+    width: 54rem;
+}
+/* END FOOTER */
+
+
+/* PHONE */
+.phone {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 200;
+}
+
+.phone img {
+    width: 5rem;
+}
+/* END PHONE */
+
+
+/* HOME */
+#home .slider-banner .banner {
+    height: calc(100vh - 10rem);
+}
+ 
+#home .slick-dots {
+    bottom: 2rem !important;
+}
+
+#home .slick-dots li button:before {
+    font-size: 1.4rem !important;
+    color: #eeeeee !important;
+    opacity: 0.6 !important;
+}
+
+#home .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: #ffffff !important;
+}
+
+#home .slider-banner .prev, 
+#home .slider-banner .next {
+    top: 58% !important;
+}
+
+#home .slider-banner .prev {
+    left: 6rem !important;
+}
+
+#home .slider-banner .next {
+    right: 6rem !important;
+}
+
+#home .slider-banner .prev img, 
+#home .slider-banner .next img {
+    width: 3rem;
+}
+
+#home .highlights {
+    padding-top: 6rem;
+    text-align: center;
+}
+
+#home .highlights .box {
+    padding: 0 0.4rem;
+}
+
+#home .highlights h2 {
+    padding-bottom: 4rem;
+}
+
+#home .highlights h3 {
+    color: #0099d5;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 2rem 0 0 0;
+    font-family: 'lato-light';
+    min-height: 7rem;
+}
+
+#home .highlights p {
+    width: 75%;
+    margin: auto;
+}
+
+#home .highlights .prev, 
+#home .highlights .next {
+    top: 35% !important;
+}
+
+#home .highlights .prev {
+    left: -6rem !important;
+}
+
+#home .highlights .next {
+    right: -6rem !important;
+}
+
+#home .highlights .prev img,
+#home .highlights .next img {
+    width: 1.6rem;
+} 
+
+#home .news {
+    background-image: url(../images/home/noticias/cepac-noticias.jpg);
+}
+
+#home .news .box > div {
+    padding: 0 1rem;
+}
+
+#home .news h4,
+#home .news p {
+    width: 75%;
+}
+
+#home .news h3 {
+    font-family: 'lato-light';
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 3rem;    
+}
+
+#home .news h4 {
+    font-family: 'lato-black';
+    padding: 0.7rem 0;
+    line-height: 1.2;
+    color: #000000;
+    min-height: 5rem;
+}
+/* END HOME */
+
+
+/* QUEM SOMOS */
+#about .banner-main {
+    background-image: url(../images/sobre/quem-somos/cepac-centro-padre-alves-correia-quem-somos-banner-novo.jpg);
+}
+
+#about .begin-text p {
+    color: #0099d5 !important;
+}
+
+#about .mission > div {
+    width: 50%;
+    padding: 2rem 0;
+}
+
+#about .mission .left {
+    padding-right: 4rem;
+}
+
+#about .mission .right {
+    padding-left: 4rem;
+}
+
+#about .mission h2 {
+    text-transform: uppercase;
+    padding: 3rem 0 2rem 0;
+}
+
+#about .mission .left h2 {
+    color: #d1b05f;
+}
+
+#about .mission .right h2 {
+    color: #0099d5;
+}
+
+#about .mission .texting {
+    padding-top: 2rem;
+}
+
+#about .mission p {
+    font-style: italic;
+}
+
+#about .mission .texting {
+    padding-bottom: 6rem;
+}
+
+#about .constitution .box > div {
+    padding: 0 0.7rem;
+}
+
+#about .constitution h3 {
+    font-size: 0.9rem; 
+    color: #0099d5;
+    text-transform: uppercase;
+    padding-top: 4rem;
+}
+
+#about .end {
+    background-color: #e8eaef;
+    margin-top: 7rem;
+    padding: 6rem 1rem;
+}
+
+#about .end p {
+    font-family: 'lato-bold';
+    font-size: 1.8rem;
+    color: #0099d5;
+    width: 75rem;
+    margin: auto;
+    text-align: center;
+}
+
+#about .end .btns {
+    padding-top: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#about .end .btns > div {
+    padding: 1rem 1.5rem;   
+}
+
+#about .end .btns a > div{    
+    width: 25rem;
+}
+/* END QUEM SOMOS */
+
+
+/* A NOSSA EQUIPA */
+#team .banner-main {
+    background-image: url(../images/sobre/equipa/cepac-banner4.jpg) !important;
+}
+
+#team .supertitle h2 {
+    color: #0099d5;
+}
+
+#team .begin-text .bigparagraph p,
+#team .begin-text .paragraph p {
+    color: #0099d5;
+}
+
+#team .begin-text .bigparagraph p {
+    text-align: left;
+}
+
+#team .people {
+    padding: 4rem;
+} 
+
+#team .people .content {
+    padding: 3rem 0;
+}
+
+#team .people .supertitle h2 {
+    padding: 0 0 4rem 1.5rem;
+}
+
+#team .people h3 {
+    font-size: 1.7rem;
+    color: #f8c24e;
+}
+
+#team .people p,
+#team .people a {
+    font-size: 1.4rem;
+}
+
+#team .people a {
+    color: #000000;
+}
+
+
+#team .people .flex-column > div {
+    width: 20%;    
+}
+
+#team .people .flex-column.conselho-fiscal > div  {
+    width: auto !important;    
+}
+
+#team .people .conselho-fiscal .boxe1 {
+    margin-right: 86px;
+}
+
+#team .people .conselho-fiscal-sub .boxes {
+    width: 33% !important;    
+    padding: 1rem 1rem !important;
+    margin-right: 3px;
+    align-self: baseline;
+}
+
+#team .people .acolhimento-apoio-sub .boxes {
+    width: 33% !important;    
+    padding: 1rem 1rem !important;
+    margin-right: 3px;
+}
+
+#team .people .acompanhamento-sub .boxes {
+    width: 24% !important;    
+    padding: 1rem 1rem !important;
+    margin-right: 3px;
+}
+
+#team .equipa-main {
+    display: flex;
+}
+
+#team .equipa-box{
+    align-self: center;
+}
+
+#team .equipa-img img {
+    width: 100px !important;
+    margin: 0px 10px 0px 10px;
+}
+
+
+#team .people .boxes {
+    padding: 1rem 1rem;    
+}
+
+#team .people .boxes > div {
+    min-height: 8rem;
+    /* border-bottom: 0.1rem solid #000000; */
+}
+
+#team .volunteering {
+    text-align: center;
+    padding: 0 6rem;
+}
+
+#team .volunteering .lead {
+    width: 50rem;
+    margin: auto;
+}
+
+#team .volunteering .lead h2 {    
+    color: #004256 !important;
+}
+
+#team .volunteering .greyparagraph p {
+    padding-top: 1rem;
+}
+
+#team .volunteering .figure {
+    padding: 6rem 0 1rem 0; 
+}
+
+#team .figure-box1 {
+    margin: 50px 0px 100px 0px
+}
+#team .figure-box2 {
+    margin: 50px 0px 50px 0px
+}
+
+#team .figure-box1 > span,
+#team .figure-box2 > span {
+    display: inline-flex;
+    padding: 2rem 3rem 0rem 3rem;
+}
+
+#team .end {
+    background-image: url('../images/sobre/equipa/cepac-equipa-fundo.jpg');
+    padding: 8rem 0;
+    margin-top: 8rem;
+}
+
+/* END A NOSSA EQUIPA */
+
+
+/* CODIGO DE CONDUTA */
+#conduct .banner-main {
+    /* background-image: url('../images/sobre/conduta/capa_1_preferencial1.jpg') !important;
+    background-image: url('../images/sobre/conduta/capa_1_preferencial2.jpg') !important; */
+    background-image: url('../images/sobre/conduta/capa_1_preferencial3.jpg') !important;
+}
+
+#conduct .lead {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    width: 80%;
+}
+
+#conduct .lead p {
+    line-height: 1.8;
+}
+
+#conduct .pair {
+    background-image: url('../images/sobre/conduta/cepac-codigo-conduta-fundo.jpg');
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#conduct .pair > div {
+    width: 50%;
+}
+
+#conduct .pair > div:first-child {
+    padding-right: 2rem;
+}
+
+#conduct .pair > div:last-child {
+    padding-left: 2rem;
+}
+
+#conduct .pair img {
+    border-radius: 2rem;
+}
+
+#conduct .pair h2,
+#conduct .pair p {
+    color: #ffffff;
+    padding-left: 2rem;
+}
+
+#conduct .pair h2 {
+    font-family: 'lato-bold';
+    padding-top: 2rem;
+    min-height: 7rem;
+    width: 80%;
+} 
+
+#conduct .pair p {
+    width: 60%;
+}
+
+#conduct .end {
+    padding-bottom: 6rem; 
+}
+
+#conduct .end p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+#conduct .end .btns {
+    width: 55%;
+    margin: auto;
+}
+
+#conduct .end .btns .background-brown:hover {
+	background-color: transparent;
+	color: #d1b05f !important;
+}
+
+#conduct .end .btns a > div {
+    text-align: center;
+    font-size: 2.1rem;
+    text-transform: unset;
+    padding: 1.5rem;
+}
+#conduct .doc-flex-p {
+    width: 75%;
+    font-size: 1.1rem;
+    margin: 20px 0px 0px 0px;
+}
+
+/* END CODIGO DE CONDUTA */
+
+
+/* DOCUMENTOS OFICIAIS */
+#statutes .banner-main {
+    background-image: url('../images/sobre/documentos-oficiais/cepac-centro-padre-alves-correia-documentos-oficiais-banner.jpg') !important;
+}
+
+#statutes .intro, 
+#conduct .intro  {
+    padding: 8rem 4rem 0 20rem;
+}
+
+#statutes .doc-flex > div, 
+#conduct .doc-flex > div {
+    padding: 0 10rem 6rem 0;
+}
+
+#statutes h2,
+#conduct h2 {
+    color: #0099d5;
+}
+
+#statutes .doc-flex h2,
+#conduct .doc-flex h2 {
+    font-size: 2.2rem;
+    min-height: 6.5rem;
+    line-height: 1.2;
+}
+
+#statutes .history {
+    padding-bottom: 6rem;
+}
+
+#statutes .history p {
+    padding-top: 3rem;
+    color: #606060;
+    padding-right: 6rem;
+}
+
+#statutes .images {
+    padding-bottom: 4rem;
+}
+
+#statutes .images > div {
+    width: 33.333%;
+    padding: 0 0.4rem;
+}
+/* DOCUMENTOS OFICIAIS */
+
+
+/* REDES E PARCEIROS */
+#partners .banner-main {
+    background-image: url(../images/sobre/redes-parceiros/cepac-centro-padre-alves-correia-redes-parceiros-banner-novo.jpg);
+}
+
+#partners .topics {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#partners .topics nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 1rem 1.5rem 1rem 0;
+}
+
+#partners .topics nav ul li a .link,
+#partners .topics nav ul li a .line {
+    width: 27rem;
+} 
+
+#partners .topics nav ul li a .link {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 2rem;
+} 
+
+#partners .topics nav ul li a .line {
+    margin-top: 0.5rem;
+    height: 0.5rem;
+}
+
+#partners .topics .mediumparagraph p {
+    color: #606060;
+}
+
+#partners .topics .mediumparagraph p {    
+    padding: 2rem 10rem 0 0;
+}
+
+#partners .mediumparagraph a {
+    color: #0099d5;
+    font-family: 'lato-bold';
+}
+
+#partners .logos {
+    padding: 4rem 6rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#partners .logos img {
+    width: 15rem;
+}
+
+#partners .btns.medium-btns {
+    margin: 50px 0px 20px 0px;
+}
+#partners .medium-btns a > div {
+    width: 40rem;
+}
+
+
+/* END REDES E PARCEIROS */
+
+
+/* O QUE FAZEMOS */
+/*#activities .banner-main {
+    background-image: url(../images/fazemos/cepac-centro-padre-alves-correia-o-que-fazemos-banner-novo.jpg);
+}*/
+
+#activities .middleparagraph p {
+    line-height: 1.7;
+}
+
+#activities .wrapper {
+    padding: 8rem 0;
+}
+
+#activities .wrapper > div {
+    width: 50%;
+}
+
+#activities .wrapper > div:first-child {
+    padding-right: 2.5rem;
+} 
+
+#activities .wrapper > div:last-child {
+    padding-left: 2.5rem;
+} 
+
+#activities .slider-container {
+    padding-top: 10rem;
+}
+
+#activities .slider-container .box > div {
+    padding: 0 0.7rem;
+}
+
+#activities .slider-container .prev img, 
+#activities .slider-container .next img {
+    width: 1.4rem;
+}
+
+#activities .slider-container .line {
+    width: 100%;
+    height: 1rem;
+    margin-top: 1rem;
+}
+
+#activities .mediumtitle h2 {
+    color: #0099d5;
+}
+
+#activities .block {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+#activities .mediumtitle h3 {
+    color: #d1b05f;
+}
+
+#activities .topics > div {
+    margin: 0.8rem 0;
+} 
+
+#activities .border-brown-left p {
+    font-family: 'lato-black';
+    font-size: 1.1rem;
+    color: #0099d5;
+    text-transform: uppercase;
+    padding: 0.7rem 3rem;    
+}
+
+#activities .flex-bullet {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5rem;
+}
+
+#activities .bullet {
+    padding-right: 1rem;
+}
+
+#activities .bullet img {
+    width: 2rem;
+}
+
+#activities .smallparagraph p {
+    color: #606060;
+}
+
+#activities .background-end {
+    padding: 3rem;
+}
+
+#activities .btns-padding {
+    padding-top: 2rem;
+}
+
+#activities .btns-left {
+    padding-left: 2rem;
+}
+
+#activities .padding-extra {
+    padding-top: 1rem;
+}
+
+#activities .row {
+    padding: 3rem 0;
+}
+
+#activities .row-extra {
+    padding-top: 3rem;
+}
+
+#activities .row .btns {
+    margin: 1rem 0;
+}
+
+#activities .separator {
+    width: 100%;
+    height: 1.3rem;
+    margin-top: 6rem;
+}
+
+#activities a {
+    color: #606060; 
+}
+
+#activities .block-blue .border-blue {    
+    padding: 0.7rem 2rem;
+}
+
+#activities .block-blue .border-blue p {
+    font-family: 'lato-bold';
+}
+
+#activities .block-blue-span {
+    font-family: 'lato-bold';
+    color: #606060;     
+    line-height: 1.7; 
+    font-size: 1.1rem;
+}
+
+#activities .faqs {
+    padding: 0 !important;
+}
+
+#activities .minititle h3 {
+    color: #0099d5;
+}
+
+#activities .topics-flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+}
+
+#activities .topics-flex .name {
+    margin-right: auto;
+    padding-right: 1rem;
+}
+
+#activities .topics-flex .icon {
+    padding-right: 1rem;
+}
+
+#activities .topics-flex .icon img {
+    width: 1.5rem;
+}
+
+#activities .image-extra {
+    width: 80%;
+    margin: auto;
+}
+
+#activities .medium-btns a > div {
+    width: 33rem;
+    
+}
+
+#activities .div-button {
+    justify-content: center;
+}
+
+/* END O QUE FAZEMOS */
+
+
+/* O QUE FAZEMOS APOIO SOCIAL */
+.socialSupport .banner-main {
+    background-image: url('../images/fazemos/atendimento-acompanhamento-social/cepac-centro-padre-alves-correia-acompanhamento-social-banner.jpg') !important;
+    background-image: url('../images/fazemos/atendimento-acompanhamento-social/capa_1.jpg') !important;
+}
+/* END O QUE FAZEMOS APOIO SOCIAL */
+
+
+/* O QUE FAZEMOS APOIO ALIMENTAR */
+.foodSupport .banner-main {
+    background-image: url('../images/fazemos/apoio-alimentar/Capa_1f.jpg') !important;
+}
+/* END O QUE FAZEMOS APOIO ALIMENTAR */
+
+
+/* O QUE FAZEMOS APOIO BENS DOADOS */
+.donatedSupport .banner-main {
+    background-image: url('../images/fazemos/apoio-bens-doados/cepac-centro-padre-alves-correia-apoio-bens-doados-banner.jpg') !important;
+}
+/* END O QUE FAZEMOS APOIO BENS DOADOS */
+
+
+/* O QUE FAZEMOS INSERCAO PROFISSIONAL E FORMACAO */
+.professionalInsertion .banner-main {
+    background-image: url('../images/fazemos/insercao-profissional-formacao/cepac-centro-padre-alves-correia-formacao-banner.jpg') !important;
+}
+/* END O QUE FAZEMOS INSERCAO PROFISSIONAL E FORMACAO */
+
+
+/* O QUE FAZEMOS SERVICOS CLINICOS */
+.clinicalServices .banner-main {
+    background-image: url('../images/fazemos/servicos-clinicos/cepac-centro-padre-alves-correia-servicos-clinicos-banner.jpg') !important;
+}
+/* END O QUE FAZEMOS SERVICOS CLINICOS */
+
+
+/* O QUE FAZEMOS APOIO MEDICAMENTOS */
+.drugSupport .banner-main {
+    background-image: url('../images/fazemos/apoio-medicamentos/capa.jpg') !important;
+}
+/* END O QUE FAZEMOS APOIO MEDICAMENTOS */
+
+
+/* O QUE FAZEMOS PROJETOS */
+.projects .banner-main {
+    background-image: url('../images/fazemos/projetos/cepac-centro-padre-alves-correia-projetos-banner.jpg') !important;
+}
+/* END O QUE FAZEMOS PROJETOS */
+
+
+/* PLANOS E RELATORIOS */
+#reports .banner-main {
+    background-image: url('../images/sobre/planos-relatorios/cepac-centro-padre-alves-correia-planos-banner.jpg') !important;
+}
+
+#reports .wrap {
+    padding: 8rem 0;
+}
+
+#reports .menu {
+    padding-top: 9rem;
+    width: 30rem;
+}
+
+#reports .menu nav {
+    padding: 3rem;
+    border-right: 0.2rem solid #0099d5;
+    text-align: center;
+}
+
+#reports .menu nav ul li {
+    font-size: 2.4rem;
+    list-style: none;
+    padding: 0.5rem 0;    
+}
+
+#reports .menu nav ul li a {
+    color: #0099d5;
+    font-family: 'lato-light';
+}
+
+#reports .menu nav ul li a.active {
+    font-family: 'lato-bold';
+}
+
+#reports .mediumtitle h2,
+#reports .mediumtitle h3 {
+    color: #0099d5;
+}
+
+#reports .documents {
+    width: calc(100% - 30rem);
+}
+
+#reports .documents .width {
+    padding: 0 33%;
+}
+
+#reports .slider-container-right {
+    padding-top: 6rem !important;
+    padding-bottom: 0 !important;
+}
+
+#reports .box > div {
+    padding: 0 1rem;
+}
+
+#reports .mediumtitle h3 {
+    padding: 0 0 1.5rem 5rem;
+}
+
+#reports .slider-container .prev img, 
+#reports .slider-container .next img {
+    width: 1.4rem;
+}
+
+#reports h4 {
+    color: #000000;
+    font-family: 'lato-black';
+    font-size: 1.4rem;
+    padding-top: 3rem;
+    min-height: 7rem;
+}
+
+#reports .slider-container a > div {
+    background-color: #d1b05f;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-family: 'lato-bold';
+    width: 10rem;
+    text-align: center;
+}
+
+#reports .separator {
+    width: 100%;
+    height: 1.3rem;
+    margin-top: 6rem;
+}
+
+#reports .links {
+    padding-top: 6rem;
+}
+
+#reports .links > div {
+    padding: 0.8rem 0;
+}
+
+#reports .links a {
+    font-size: 1.5rem;
+    color: #000000; 
+}
+
+#reports .links a:hover {
+    text-decoration: underline;
+}
+/* END PLANOS E RELATORIOS */
+
+
+/* APOIE-NOS */
+#support .column {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 12rem;
+}
+
+#support .column > div {
+    padding-right: 3rem;
+}
+
+#support .column p {
+    font-size: 1.2rem;
+}
+
+#support .column .one {
+    width: 40rem;
+}
+
+#support .column .padding {
+    padding-bottom: 1rem;
+}
+
+#support .column .two img {
+    border-radius: 14rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#support .column .three {
+    width: 45rem;
+}
+
+#support .column .three h2 {
+    color: #d1b05f;
+}
+
+#support .column .flex-icon {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+#support .column .three img {
+    width: 4.5rem;
+}
+
+#support .column .three h3 {    
+    color: #0099d5;
+    font-family: 'lato-bold';
+    font-size: 1.75rem;
+    padding-left: 1.5rem;
+}
+
+#support .explanation {
+    background-image: url(../images/apoio/cepac-apoio-fundo.jpg);
+    padding: 7rem 0 0 7.5rem;
+}
+
+#support .explanation .box {
+    width: 33.333%;
+    padding-left: 3.5rem;
+    padding-bottom: 5rem;
+}
+
+#support .explanation .box > div {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2rem 2rem 0 3rem;
+    position: relative;
+    height: 48rem;
+}
+
+#support .explanation h3,
+#support .explanation h4,
+#support .explanation p,
+#support .explanation a {
+    color: #0099d5;
+} 
+
+#support .explanation h3 {
+    font-family: 'lato-black';
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+#support .explanation h4 {
+    font-family: 'lato-bold';
+    font-size: 1.75rem;
+    padding-bottom: 1.5rem;
+}
+
+#support .explanation p {
+    font-size: 1.4rem;
+}
+
+#support .explanation .icon-absolute {
+    position: absolute;
+    top: -5.5rem;
+    right: 2rem;
+}
+
+#support .explanation .icon-absolute img {
+    width: 10.5rem;
+}
+
+#support .explanation .links {
+    padding: 0 1rem 5rem 4rem; 
+}
+
+#support .explanation .links > div {
+    width: 52rem;
+    margin: 1rem 0;
+}
+
+#support .explanation .links a > div {    
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: 'lato-black';
+    border: 0.1rem solid #ffffff;
+    padding: 1.5rem;
+    position: relative;
+}
+
+#support .explanation .links .heart {
+    position: absolute;
+    top: 0.6rem;
+    right: -2rem;
+} 
+
+#support .explanation .links .heart img {
+    width: 4.5rem;
+}   
+/* END APOIE-NOS */
+
+
+/* NOTICIAS */ 
+#news .blocks {
+    padding: 0 10rem;
+}
+
+#news .blocks .columns > div {
+    width: 33.333%;
+    padding: 4rem 1rem;
+}
+
+#news .blocks h3 {
+    font-family: 'lato-black';
+    padding-top: 4rem;
+    width: 80%;
+    min-height: 8rem;
+    line-height: 1.2;
+} 
+
+#news .blocks p {
+    width: 70%;
+}
+
+#news .blocks img {
+    border-radius: 1.5rem;
+}
+
+#news .pagination {
+    padding: 4rem 0 8rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#news .pagination > div {
+    margin: 0 1rem;
+}
+
+#news .pagination a {
+    font-family: 'lato-bold';
+    color: #ffffff;
+    font-size: 1.3rem;
+    background-color: #0099d5;
+    opacity: 0.5;
+    border-radius: 50%;
+    padding: 0.3rem 0.7rem;
+}
+
+#news .pagination a:hover,
+#news .pagination a.active {
+    opacity: 1;
+}
+/* END NOTICIAS */ 
+
+
+/* NOTICIA PAGINA INDIVIDUAL */
+#article {
+    padding-bottom: 10rem;
+}
+
+#article h2 {
+    font-size: 2.4rem !important;
+    padding-bottom: 6rem;
+}
+
+#article img {
+    width: 65%;
+    border-radius: 1.5rem;
+}
+
+#article h3 {
+    font-family: 'lato-black';
+    padding: 5rem 0 3rem 0;
+    width: 60%;
+    line-height: 1.2;
+} 
+
+#article .middleparagraph p {
+    padding: 1.5rem 0;
+    color: #0099d5;
+}
+/* END NOTICIA PAGINA INDIVIDUAL */
+
+
+/* CONTACTOS */
+#contacts {
+    padding-top: 10rem;
+}
+
+#contacts .background-brown {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#contacts .background-brown > div {
+    width: 50%;        
+}
+
+#contacts .background-brown > div:first-child {
+    padding-right: 5rem;
+}
+
+#contacts .background-brown > div:last-child {
+    padding-left: 5rem;
+}
+
+#contacts .map iframe {
+    width: 100%;
+    height: 50.5rem;
+}
+
+#contacts .block {
+    padding-bottom: 2rem;
+}  
+
+#contacts h1,
+#contacts h2 {
+    font-family: 'lato-black';
+    font-size: 2.4rem;
+}
+
+#contacts a {
+    color: #1d1d1b;
+}
+
+#contacts .paragraph p {
+    padding-top: 0.5rem;
+}
+
+#contacts form {
+    padding-top: 1rem;
+}
+
+#contacts form .flex > div {
+    width: 50%;
+} 
+
+#contacts form .flex > div:first-child {
+    padding-right: 0.2rem;
+}
+
+#contacts form .flex > div:last-child {
+    padding-left: 0.2rem;
+}
+
+#contacts form input,
+#contacts form textarea {
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.2rem;
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.1rem solid #ffffff;
+    margin-bottom: 1.3rem;
+    padding: 1rem;
+}
+
+#contacts form textarea {
+    height: 8rem; 
+}
+
+#contacts input::-webkit-input-placeholder,
+#contacts textarea::-webkit-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.2rem;
+}
+
+#contacts input:-moz-placeholder,
+#contacts textarea::-webkit-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.2rem;
+}
+
+#contacts input::-moz-placeholder,
+#contacts textarea::-webkit-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.2rem;
+}
+
+#contacts input:-ms-input-placeholder,
+#contacts textarea::-webkit-input-placeholder { 
+    color: #1d1d1b !important;
+    font-family: 'lato-regular';
+    font-size: 1.2rem;
+}
+
+#contacts form button {
+    background-color: #0099d5;
+    border: 0.1rem solid #0099d5;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-family: 'lato-black';
+    font-size: 1.2rem;
+}
+
+#contacts form button:hover {
+	background-color: transparent;
+	color: #0099d5;
+}
+/* END CONTACTOS */
+
+
+/* END POPUP FORMS */
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-form-content {
+    width: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.popup-form-close {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    text-align: right;    
+}
+
+.popup-form-close img {
+    width: 2rem;
+    cursor: pointer;
+}    
+
+.popup-form-text {
+    padding: 8rem 4rem;    
+}
+
+.popup-form-text p {
+    font-family: 'lato-regular';
+    font-size: 1.6rem;
+}
+/* END POPUP FORMS */
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1824px) {
+    /* EQUIPA */
+    #team .people .acompanhamento-sub .boxes {
+        width: 26% !important;    
+    }
+
+    #team .people .conselho-fiscal-sub .boxes { 
+        width: 30% !important;
+    }
+}
+
+/* DESKTOP */
+@media(max-width: 1699px) {  
+
+    /* CONTENT */
+    html {
+        font-size: 10px;
+    } 
+
+    #team .figure-box1 > span, #team .figure-box2 > span {
+        font-size: 1.3rem;
+    }
+
+    #team .people .conselho-fiscal .boxe1 {
+        margin-right: 175px;
+    }
+
+}
+
+@media(max-width: 1295px) {
+    /* EQUIPA */
+    #team .people .acompanhamento-sub .boxes {
+        width: 33% !important;    
+    }
+
+    #team .figure-box1 > span,
+    #team .figure-box2 > span {
+        display: inline-flex;
+        padding: 2rem 1.4rem 0rem 1.4rem;
+    }
+}
+
+/* PORTATIL */
+@media (max-width: 1199px) {   
+
+    /* CONTENT */   
+    .container {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .container-extra {
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }   
+
+    .container-left {
+        padding-left: 7rem;
+    }
+
+    .container-right {
+        padding-right: 7rem;
+    }    
+
+    .main-title h1 {
+        font-size: 4rem;
+    }
+
+    .slider-container-right {
+        padding: 10rem 0 4rem 9rem;
+    }
+
+    .slider-border-right .next {
+        right: 11rem !important;
+    }
+
+    .slider-border-right .prev {
+        right: 14rem !important;
+    }
+
+    /* FOOTER */
+    footer .texts {
+        padding: 0 1rem 0 2rem;
+    }    
+
+    footer .texts-media {
+        padding-right: 0;
+    }
+
+    footer .second > div {
+        padding: 1rem 2rem;
+    }
+
+    /* HOME */
+    #home .slider-banner .banner {
+    	height: 55rem !important;
+	}
+
+    #home .slider-banner .prev {
+        left: 3rem !important;
+    }
+
+    #home .slider-banner .next {
+        right: 3rem !important;
+    }
+
+    #home .slider-banner .prev img, 
+    #home .slider-banner .next img {
+        width: 2.5rem;
+    }
+
+    /* A NOSSA EQUIPA */
+    #team .people .flex-column > div {
+        width: 25%;
+    }
+
+    #team .figure-box1 > span,
+    #team .figure-box2 > span {
+        display: inline-flex;
+        padding: 2rem .8rem 0rem .8rem;
+    }
+
+    /* ESTATUTOS */
+    #statutes .intro,
+    #conduct .intro {
+        padding: 8rem 4rem 0 14rem;
+    }
+
+    /* PLANOS E RELATORIOS */
+    #reports .menu {
+        width: 24rem;
+    }
+
+    #reports .documents {
+        width: calc(100% - 24rem);
+    }
+
+    /* APOIE-NOS */
+    #support .explanation {
+        padding: 7rem 0 0 3.5rem;
+    }
+
+    #support .explanation .box > div {
+        height: 54rem;
+    }
+
+    #support .explanation .icon-absolute img {
+        width: 8rem;
+    }
+
+    #support .explanation .icon-absolute {
+        top: -4rem;
+        right: 0;
+    }
+
+    /* NOTICIAS */
+    #news .blocks {
+        padding: 0 6rem;
+    }
+
+    /* CONTACTOS */
+    #contacts .background-brown > div:first-child {
+        padding-right: 3rem;
+    }
+
+    #contacts .background-brown > div:last-child {
+        padding-left: 3rem;
+    }
+       
+}
+
+
+/* TABLET */
+@media(max-width: 1050px) { 
+
+    /* CONTENT */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem; 
+    }
+
+    .container-extra {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
+
+    .container-left {
+        padding-left: 1rem;
+    }
+
+    .container-right {
+        padding-right: 1rem;
+    }
+ 
+    .top-extra {
+        padding-top: 16rem;
+    }     
+
+    .main-title {    
+        width: 100%;
+        padding: 0 2rem;
+    } 
+
+    .main-title h1 {
+        font-size: 4rem;
+    }    
+
+    .title h2,
+    .bigtitle h1,
+    .bigtitle h2 {
+        font-size: 3rem;
+    }
+
+    .hipertitle h2 {
+        font-size: 2.4rem;
+    }
+
+    .supertitle h2 {
+        font-size: 2.3rem;
+    }
+
+    .begin-text {
+        width: 100%;
+    }
+
+    .slider-container-right {
+        padding: 10rem 0 4rem 0rem;
+    }
+    
+    .slider-container h2 {
+        padding: 0 0 2rem 1rem;
+    }
+
+    .slider-border-right {
+        right: 0;
+    }
+
+    .slider-border-left {
+        left: 0;
+        width: 100% !important;
+    }
+
+    .slider-border-right .prev {
+        right: 4rem !important;
+    }
+
+    .slider-border-right .next {
+        right: 1rem !important;
+    }
+
+    .faqs {
+        padding: 0;
+    }
+
+    .faqs .faq-question {
+        padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    }
+
+    .faqs p {
+        padding: 2rem 0 1rem 2rem;
+    }
+
+    /* HEADER */
+    header .logo {
+        padding: 1rem;
+    }
+
+    header .navbar ul {    
+        overflow-y: scroll;
+    }
+
+    header .search-bar {
+        padding-right: 1rem;
+    }    
+
+    /* FOOTER */
+    footer .first {
+        padding: 3rem 1rem;
+    }
+
+    footer .first > div {
+        width: 50%;
+    }
+
+    footer .logotipo {
+        width: 100% !important;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 5rem;
+    }
+
+    footer .second {
+        margin: 0 1rem;
+    }
+
+    footer .second > div {
+        width: 50%;
+    }  
+
+    footer .one {
+        display: none;
+    }  
+
+    /* PHONE */
+    .phone {
+        right: 1rem;
+    }
+
+    /* HOME */
+    #home .slider-banner .prev {
+        left: 1rem !important;
+    }
+
+    #home .slider-banner .next {
+        right: 1rem !important;
+    }
+
+    #home .slider-banner .prev img, 
+    #home .slider-banner .next img {
+        width: 2rem;
+    }    
+
+    #home .highlights .prev {
+        right: 3rem !important;
+    }
+    
+    #home .highlights .next {
+        right: 0 !important
+    }        
+
+    #home .highlights .prev, 
+    #home .highlights .next {
+        top: -3.5rem !important;
+    }
+
+    #home .highlights h2 {
+        text-align: left;
+        padding-bottom: 1rem;
+    }    
+
+    #home .highlights .prev {
+        left: unset !important;
+    }    
+
+    /* QUEM SOMOS */
+    #about .mission .left {
+        padding-right: 2rem;
+    }
+
+    #about .mission .right {
+        padding-left: 2rem;
+    }
+
+    #about .end p {
+        width: 100%;
+    }
+
+    #about .slider-container-right {
+    	padding: 0;
+	}
+
+    /* EQUIPA */   
+    #team .people {
+        padding: 4rem 0;
+    }
+
+    #team .people .flex-column > div {
+        width: 33.333%;
+    }
+
+    #team .volunteering {
+        padding: 0 1rem;
+    }
+
+    #team .volunteering .lead {
+        width: 100%;
+    }
+
+    .acolhimento-apoio-sub {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team .people .acompanhamento-sub .boxes {
+        width: 38% !important;    
+    }
+
+    #team .figure-box1 > span,
+    #team .figure-box2 > span {
+        display: inline-flex;
+        padding: 2rem 3rem 0rem 3rem;
+    }
+
+    /* CODIGO DE CONDUTA */
+    #conduct .lead,
+    #conduct .end p {
+        width: 100%;
+    }
+
+    #conduct .pair h2, 
+    #conduct .pair p {
+    	width: 100%;
+    }
+
+    #conduct .pair > div:first-child {
+        padding-right: 0.5rem;
+    }
+
+    #conduct .pair > div:last-child {
+        padding-left: 0.5rem;
+    }
+
+    /* DOCUMENTOS OFICIAIS */
+    #statutes .intro,
+    #conduct .intro {
+        padding: 6rem 1rem 0 1rem;
+    }
+
+    #statutes .history p {
+        padding-right: 0;
+    }
+
+    #statutes .doc-flex > div,
+    #conduct .doc-flex > div {
+        padding: 0 6rem 6rem 0;
+    }
+
+    /* REDES E PARCEIROS */
+    #partners .topics .mediumparagraph p {
+        padding: 2rem 0 0 0;
+    }
+
+    #partners .logos {
+        padding: 4rem 0;
+    }   
+
+    /* O QUE FAZEMOS */
+    #activities .wrapper > div {
+        width: 100%;
+    }
+
+    #activities .wrapper > div:first-child {
+        padding-right: 0.5rem;
+    }
+
+    #activities .wrapper > div:last-child {
+        padding-left: 1rem;
+    }
+
+    #activities .slider-container {
+        padding-top: 0;
+        padding-bottom: 10rem;
+    }
+
+    /* PLANOS E RELATORIOS */
+    #reports .menu {
+        width: 14rem;
+    }
+
+    #reports .menu nav ul li {
+        font-size: 2rem;
+    }
+
+    #reports .documents {
+        width: calc(100% - 14rem);
+        padding-left: 4rem;
+    }
+
+    #reports .mediumtitle h3 {
+        padding: 0 0 1.5rem 1rem;
+    }
+
+    #reports .documents .width {
+        padding: 0;
+    }
+
+    /* APOIE-NOS */ 
+    #support .column {
+        -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    #support .column > div {
+        width: 50% !important;
+        padding: 2rem 0;
+    }
+
+    #support .explanation {
+        padding: 7rem 0 0 0;
+    }
+
+    #support .explanation .box {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #support .column .three h3,
+    #support .explanation h4 {
+        font-size: 1.5rem;
+    }
+
+    #support .explanation .box {
+        width: 50%;
+    }
+
+    #support .explanation .box > div {
+        height: 50rem;
+    }
+
+    #support .explanation .links {
+        padding: 0 1rem 5rem 1rem;
+    }
+
+    #support .explanation .links a > div {        
+        font-size: 1.6rem;
+    }
+
+    /* NOTICIAS */
+    #news .blocks {
+        padding: 0;
+    }
+
+    #news .blocks .columns > div {
+        width: 50%;
+    }
+
+    #news .blocks h3,
+    #news .blocks p {
+        width: 100%;
+    }   
+
+    /* NOTICIA PAGINA INDIVIDUAL */
+    #article img,
+    #article h3 {
+        width: 100%;
+    }
+
+    /* CONTACTOS */
+    #contacts .background-brown > div:first-child {
+        padding-right: 1rem;
+    }
+
+    #contacts .background-brown > div:last-child {
+        padding-left: 1rem;
+    }
+
+    #contacts h1, 
+    #contacts h2 {
+        font-size: 2rem;
+    }
+        
+}
+
+@media(max-width: 860px) {
+    /* EQUIPA */
+    #team .people .acompanhamento-sub .boxes {
+        width: 46% !important;    
+    }
+
+    #team .figure-box1 {
+        margin: 20px 0px 10px 0px
+    }
+
+    #team .figure-box2 {
+        margin: 20px 0px 10px 0px;
+    } 
+    
+    #team .figure-box1 > span,
+    #team .figure-box2 > span {
+        display: inline-flex;
+        padding: 2rem 1rem 0rem 1rem;
+    }
+}
+
+
+/* SMARTPHONE */
+@media(max-width: 700px) {  
+
+    /* CONTENT */
+    .main-title h1 {        
+        font-size: 2.7rem;
+    }
+
+    .main-title p {
+        font-size: 1.8rem;
+    }
+
+    .bigger-btns a > div,
+    .medium-btns a > div,
+    .small-btns a > div,
+    .smaller-btns a > div {
+        width: 100%;
+    } 
+
+    .begin-text {
+    	padding-top: 4rem;
+    	padding-bottom: 4rem;
+	}
+
+    /* HEADER */
+    header .navbar ul {    
+        width: 100%;
+    }
+
+    header .bar {
+        margin: 0.4rem 0.4rem 0.4rem 1rem;
+    }
+
+    header .right {
+        padding: 1rem 1rem 0 3rem;
+    }
+
+    header .btn {
+        display: none;
+    } 
+
+    /* FOOTER */
+    footer .first > div {
+        width: 100%;
+    }
+
+    footer .logotipo img {
+        width: 14rem;
+    }
+
+    footer .texts-media {
+        padding-top: 2rem;
+    }
+
+    footer .first .two {
+        padding-top: 2rem;
+    }
+
+    footer .second > div {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .logos-footer img {
+        width: 100%;
+    }
+
+    /* HOME */
+    #home .highlights p,
+    #home .news h4, 
+    #home .news p {
+        width: 100%;
+    }
+
+    #home .highlights h3 {
+        padding: 2rem 0 1.5rem 0;
+        min-height: unset;
+    }
+
+    #home .news h4 {
+        min-height: unset;
+    }
+
+    /* SOBRE */
+    #about .mission > div {
+        width: 100%;
+    }
+
+    #about .mission .left {
+        padding-right: 0;
+    }
+
+    #about .mission .right {
+        padding-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+
+    #about .end {
+    	padding: 4rem 1rem;
+	}
+
+    /* EQUIPA */   
+    #team .people .flex-column > div {
+        width: 100%;
+    }
+
+    #team .people .supertitle h2 {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    #team .people .boxes {
+        padding: 2rem 1rem;
+    }
+
+    #team .people {
+    	padding: 0 0 4rem 0;
+	}
+
+    #team .people .conselho-fiscal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team .people .conselho-fiscal-sub > div {
+        width: 100% !important;    
+    }
+    
+    #team .people .conselho-fiscal-sub {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team .people .conselho-fiscal-sub .boxes {
+        width: 100% !important;
+    }
+
+    #team .people .acompanhamento-sub .boxes {
+        width: 50% !important;    
+    }
+
+    #team .figure-box1, 
+    #team .figure-box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* CODIGO DE CONDUTA */
+    #conduct .pair > div,   
+    #conduct .end .btns {
+        width: 100%;
+    }
+
+    #conduct .lead {
+        padding-bottom: 6rem;
+    }
+
+    #conduct .pair {
+        background-image: none;
+        background-color: #0099d5;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #conduct .pair > div {
+        padding: 3rem 0;
+    }
+
+    #conduct .pair > div:first-child {
+        padding-right: 0;
+    }
+
+    #conduct .pair > div:last-child {
+        padding-left: 0;
+    }   
+
+    #conduct .pair h2 {    
+        min-height: 0;
+        padding-bottom: 1rem;        
+    }
+
+    #conduct .pair h2, 
+    #conduct .pair p {
+        padding-left: 0;
+    }
+
+    #conduct .end .btns a > div {
+        font-size: 1.8rem;
+    }
+
+    .flex2 {
+        flex-direction: column !important;
+    }
+
+    .smaller-btns a > div  {
+        width: 16rem !important;
+    }
+
+    /* DOCUMENTOS OFICIAIS */    
+    #statutes .doc-flex .smaller-btns a > div  {
+        width: 16rem !important;
+    }
+
+    #statutes .doc-flex h2,
+    #conduct .doc-flex h2 {
+        font-size: 1.9rem;
+    }
+
+    #statutes .images > div {
+        width: 100%;
+        padding: 1rem 0;
+    } 
+
+    /* REDES E PARCEIROS */
+    #partners .topics nav ul li a .link, 
+    #partners .topics nav ul li a .line {
+        width: 15rem;
+    }
+
+    #partners .topics nav ul li a .link {
+        font-size: 1.8rem;
+    }
+
+    #partners .topics {
+    	padding-top: 4rem;
+    	padding-bottom: 4rem;
+	}
+
+    /* O QUE FAZEMOS */
+    #activities .wrapper {
+    	padding: 4rem 0;
+	}
+
+	#activities .slider-container {
+    	padding-bottom: 6rem;
+	}
+
+    #activities .block {
+        padding: 2rem 0;
+    }
+
+    #activities .btns-left {
+        padding-left: 0;
+    }    
+
+    #activities .background-end {
+        padding: 3rem 1rem;
+    }
+
+    /* PLANOS E RELATORIOS */
+    #reports .wrap {
+        padding: 4rem 0;
+    }
+
+    #reports .menu {
+        width: 8rem;
+    }
+
+    #reports .menu nav {
+        padding: 1rem;
+    }
+
+    #reports .documents {
+        width: calc(100% - 10rem);
+        padding-left: 2rem;
+    }
+
+    #reports h4 {
+        min-height: 0;
+        padding-bottom: 2rem;
+    }    
+
+    /* APOIE-NOS */
+    #support .column > div {
+        width: 100% !important;
+    }
+
+    #support .explanation .box,
+    #support .explanation .links > div {
+        width: 100%;
+    }
+
+    #support .explanation .box > div {
+        height: unset;
+        padding-bottom: 2rem;
+    }
+
+    #support .explanation .icon-absolute {
+        top: 0rem;
+        right: 0;
+    }
+
+    #support .explanation .icon-absolute img {
+        width: 6rem;
+    }
+
+    #support .explanation .links .heart {
+        right: 0;
+    }
+
+    #support .explanation .links a > div {    
+        text-align: left;
+    }
+
+    /* NOTICIAS */
+    #news .blocks .columns > div {
+        width: 100%;
+    }
+
+    #news .blocks h3 {
+        padding-top: 2rem;
+        min-height: 0;
+        padding-bottom: 1rem;
+    }
+
+    /* CONTACTOS */
+    #contacts .background-brown {
+    	padding-top: 4rem;
+    	padding-bottom: 4rem;
+	}
+
+    #contacts .background-brown > div,
+    #contacts form .flex > div {
+        width: 100%;
+    }
+
+    #contacts .background-brown > div:first-child,
+    #contacts form .flex > div:first-child {
+        padding-right: 0;
+    }
+
+    #contacts .background-brown > div:last-child,
+    #contacts form .flex > div:first-child {
+        padding-left: 0;
+    }
+
+    #contacts .map {
+        padding-bottom: 4rem;
+    }    
+
+    #contacts .map iframe {
+        height: 35rem;
+    }
+
+    /* POPUP FORMS */
+    .popup-form-content {
+        width: 90%;
+    }   
+  
+}  
+
+@media(max-width: 425px) {
+
+    #partners .btns .name {
+        font-size: 3vw;
+    }
+
+    #partners .medium-btns a > div {
+        width: 94vw;
+    }
+}
+
+@media(max-width: 320px ) {
+
+    header .right {
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+
+/* END MEDIA QUERIES */  

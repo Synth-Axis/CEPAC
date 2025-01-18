@@ -1,0 +1,136 @@
+.bg-gradient-primary {
+    background: linear-gradient(87deg, #efefef 0, #f3f3f3 100%) !important;
+}
+
+.bg-default {
+    background-color: #004256 !important;
+}
+
+.fill-default {
+    fill: #004256;
+}
+
+.btn-primary {
+    background-color:  #0099d5 !important; 
+    border-color:  #0099d5 !important;
+}
+
+.btn-primary:hover {
+    background-color:  #047aa9 !important;
+    border-color:  #047aa9 !important;
+}
+
+.btn-primary:focus {
+    background-color:  #047aa9 !important;
+    border-color:  #047aa9 !important;
+
+}
+
+.bg-primary {
+    background-color:   #004256 !important;
+}
+
+.navbar-vertical .navbar-brand-img {
+    max-height: 3.5rem !important;
+}
+
+a {
+    /* color: #004256 !important; */
+}
+
+/*  */
+.paginationflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+
+.greendate {
+    color:  var(--green);
+}
+
+.search-portfolio,
+.get-opp
+ {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.get-oppbut {
+    align-self: end;
+}
+
+.search-name,
+.date-w {
+    width: 25%;
+}
+
+.small-icon {
+    width: 100%;
+    min-width: 60px;
+    max-width: 60px;
+    margin-right: 5px;
+}
+
+.big-icon {
+    width: 95px;
+    height: 65px;
+}
+
+.nostyleli {
+    list-style-type: none;
+}
+
+
+.textlimit {
+    width: 400px;
+    max-width: 400px; /* add this */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+input[type="radio" i]  {
+    background-color: red !important;
+}
+
+@media (max-width: 768px)
+{
+    .paginationflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: start ;
+    }
+
+    .search-portfolio,
+    .get-opp {
+        display: flex;
+        flex-direction: column !important;
+        align-items: initial !important;
+    }
+
+    .get-oppbut {
+        align-self: center;
+    }
+
+    .search-name {
+        width: auto !important;
+    }
+    
+
+}
+
+@media (max-width: 600px)
+{
+    .datebox {
+        width: 100% !important;
+    }
+
+    .date-w {
+        width: 100%;
+    }
+
+}
+
+
